@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Design Models</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    /* Car grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: #111;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Car Design Models</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Models</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Car Grid -->
+  <section class="container">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x200/?car,luxury" alt="Car 1">
+      <div class="card-body">
+        <h3>Ferrari F8</h3>
+        <p>Year: 2022 | Engine: V8 | Price: $275,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x200/?car,sports" alt="Car 2">
+      <div class="card-body">
+        <h3>Lamborghini Huracán</h3>
+        <p>Year: 2023 | Engine: V10 | Price: $310,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x200/?car,suv" alt="Car 3">
+      <div class="card-body">
+        <h3>Range Rover Sport</h3>
+        <p>Year: 2023 | Engine: V6 | Price: $120,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x200/?car,electric" alt="Car 4">
+      <div class="card-body">
+        <h3>Tesla Model S</h3>
+        <p>Year: 2023 | Engine: Electric | Price: $95,0000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Car Design Models | Designed by You 🚗</p>
+  </footer>
+
+</body>
+</html>
